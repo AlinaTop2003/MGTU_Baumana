@@ -148,25 +148,25 @@
             // 
             // UserRole
             // 
-            this.UserRole.AutoSize = true;
             this.UserRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UserRole.ForeColor = System.Drawing.Color.Gold;
-            this.UserRole.Location = new System.Drawing.Point(78, 192);
+            this.UserRole.Location = new System.Drawing.Point(3, 192);
             this.UserRole.Name = "UserRole";
-            this.UserRole.Size = new System.Drawing.Size(71, 16);
+            this.UserRole.Size = new System.Drawing.Size(243, 16);
             this.UserRole.TabIndex = 2;
             this.UserRole.Text = "User role";
+            this.UserRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UserName
             // 
-            this.UserName.AutoSize = true;
             this.UserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.UserName.Location = new System.Drawing.Point(63, 172);
+            this.UserName.Location = new System.Drawing.Point(0, 172);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(103, 20);
+            this.UserName.Size = new System.Drawing.Size(246, 20);
             this.UserName.TabIndex = 1;
             this.UserName.Text = "User Name";
+            this.UserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -203,11 +203,10 @@
             this.MinimumSize = new System.Drawing.Size(900, 500);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "МГТУ им. Н.Э.Баумана";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

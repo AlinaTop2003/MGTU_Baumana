@@ -9,23 +9,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MGTU_Baumana.ModelEF;
+using MGTU_Baumana.Forms;
 
 namespace MGTU_Baumana
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        Model1 model1 = new Model1();
+        User user;
+        public MainForm(User user)
         {
             InitializeComponent();
             pnlNav.Height = btnContract.Height;
             pnlNav.Top = btnContract.Top;
             pnlNav.Left = btnContract.Left;
+
+            this.user = user;
+            UserName.Text = $"{user.LustName} {user.FirsName}";
+            UserRole.Text = user.Role.Title;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnContract_Click(object sender, EventArgs e)
         {
@@ -50,6 +53,11 @@ namespace MGTU_Baumana
         {
             pnlNav.Height = btnStudent.Height;
             pnlNav.Top = btnStudent.Top;
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

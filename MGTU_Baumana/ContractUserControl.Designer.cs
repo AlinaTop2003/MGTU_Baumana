@@ -28,65 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labNext = new System.Windows.Forms.Label();
-            this.labPage = new System.Windows.Forms.Label();
-            this.labPrev = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.labNext);
-            this.panel1.Controls.Add(this.labPage);
-            this.panel1.Controls.Add(this.labPrev);
-            this.panel1.Location = new System.Drawing.Point(0, 473);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(403, 48);
-            this.panel1.TabIndex = 0;
-            // 
-            // labNext
-            // 
-            this.labNext.AutoSize = true;
-            this.labNext.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.labNext.ForeColor = System.Drawing.Color.Navy;
-            this.labNext.Location = new System.Drawing.Point(53, 0);
-            this.labNext.Name = "labNext";
-            this.labNext.Size = new System.Drawing.Size(27, 29);
-            this.labNext.TabIndex = 2;
-            this.labNext.Text = ">";
-            // 
-            // labPage
-            // 
-            this.labPage.AutoSize = true;
-            this.labPage.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.labPage.ForeColor = System.Drawing.Color.Navy;
-            this.labPage.Location = new System.Drawing.Point(27, 0);
-            this.labPage.Name = "labPage";
-            this.labPage.Size = new System.Drawing.Size(26, 29);
-            this.labPage.TabIndex = 1;
-            this.labPage.Text = "1";
-            // 
-            // labPrev
-            // 
-            this.labPrev.AutoSize = true;
-            this.labPrev.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.labPrev.ForeColor = System.Drawing.Color.Navy;
-            this.labPrev.Location = new System.Drawing.Point(0, 0);
-            this.labPrev.Name = "labPrev";
-            this.labPrev.Size = new System.Drawing.Size(27, 29);
-            this.labPrev.TabIndex = 0;
-            this.labPrev.Text = "<";
             // 
             // button1
             // 
@@ -153,25 +100,17 @@
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
             this.Name = "ContractUserControl";
             this.Size = new System.Drawing.Size(738, 521);
             this.Load += new System.EventHandler(this.ContractUserControl_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label labNext;
-        private System.Windows.Forms.Label labPage;
-        private System.Windows.Forms.Label labPrev;
         private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
